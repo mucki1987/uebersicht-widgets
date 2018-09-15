@@ -6,7 +6,7 @@ monthNames: ["January", "February", "March", "April", "May", "June", "July", "Au
 #Su
 offdayIndices: [0]
 
-refreshFrequency: 5000
+refreshFrequency: 30000
 displayedDate: null
 
 render: -> """
