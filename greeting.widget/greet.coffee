@@ -29,22 +29,26 @@ style: """
    font-weight: 700
    text-align: center
 
-  .half
-   font-size: 0.15em
-   margin-left: -1em
-
-  .text
-   font-size: 4rem
-   font-weight: 700
-
   .hour
    margin-right: -1rem
+
+  .seperator
+   display: inline-table
+   margin-top: -0.75rem
 
   .min
    margin-left: -1rem
 
+  .half
+   font-size: 0.15em
+   margin-left: -1em
+
   .salutation
-   margin-right: -1rem;
+   margin-right: -1rem
+
+  .text
+   font-size: 4rem
+   font-weight: 700
 
 """
 
@@ -52,7 +56,9 @@ style: """
 render: -> """
   <div class="container">
   <div class="time">
-  <span class="hour"></span> : <span class="min"></span>
+  <span class="hour"></span>
+  <span class="seperator">:</span>
+  <span class="min"></span>
   <span class="half"></span>
   </div>
   <div class="text">
