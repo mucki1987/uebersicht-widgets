@@ -52,8 +52,7 @@ style: """
 render: -> """
   <div class="container">
   <div class="time">
-  <span class="hour"></span>:
-  <span class="min"></span>
+  <span class="hour"></span> : <span class="min"></span>
   <span class="half"></span>
   </div>
   <div class="text">
