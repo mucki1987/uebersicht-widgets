@@ -23,9 +23,11 @@ style: """
    font-smoothing: antialiased
    text-align: center
    text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+   line-height: 1.05;
+   letter-spacing: -.015em;
 
   .time
-   font-size: 10rem
+   font-size: 9rem
    font-weight: 700
    text-align: center
 
@@ -47,7 +49,7 @@ style: """
    margin-right: -1rem
 
   .text
-   font-size: 4rem
+   font-size: 3rem
    font-weight: 700
 
 """
