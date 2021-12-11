@@ -27,7 +27,7 @@ style: """
    letter-spacing: -.015em;
 
   .time
-   font-size: 9rem
+   font-size: 8rem
    font-weight: 700
    text-align: center
 
@@ -44,9 +44,6 @@ style: """
   .half
    font-size: 0.15em
    margin-left: -1em
-
-  .salutation
-   margin-right: -1rem
 
   .text
    font-size: 3rem
@@ -128,7 +125,9 @@ update: (output, domEl) ->
     $(domEl).find('.salutation').text("Blaze It")
   else
     $(domEl).find('.salutation').text("Good #{timeSegment}")
-  $(domEl).find('.name').text(" , #{name[0]}.") if showName
+
+  $(domEl).find('.salutation').text($(domEl).find('.salutation').text() + ",") if showName
+  $(domEl).find('.name').text(" #{name[0]}.") if showName
   $(domEl).find('.hour').text("#{hour}")
   $(domEl).find('.min').text("#{minutes}")
   $(domEl).find('.half').text("#{half}") if showAmPm && !militaryTime
