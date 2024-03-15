@@ -31,20 +31,6 @@ style: """
    font-weight: 700
    text-align: center
 
-  .hour
-   margin-right: -1rem
-
-  .seperator
-   display: inline-table
-   margin-top: -0.75rem
-
-  .min
-   margin-left: -1rem
-
-  .half
-   font-size: 0.15em
-   margin-left: -1em
-
   .text
    font-size: 3rem
    font-weight: 700
@@ -55,10 +41,6 @@ style: """
 render: -> """
   <div class="container">
   <div class="time">
-  <span class="hour"></span>
-  <span class="seperator">:</span>
-  <span class="min"></span>
-  <span class="half"></span>
   </div>
   <div class="text">
   <span class="salutation"></span>
@@ -128,6 +110,5 @@ update: (output, domEl) ->
 
   $(domEl).find('.salutation').text($(domEl).find('.salutation').text() + ",") if showName
   $(domEl).find('.name').text(" #{name[0]}.") if showName
-  $(domEl).find('.hour').text("#{hour}")
-  $(domEl).find('.min').text("#{minutes}")
+  $(domEl).find('.time').text("#{hour}:#{minutes}")
   $(domEl).find('.half').text("#{half}") if showAmPm && !militaryTime
