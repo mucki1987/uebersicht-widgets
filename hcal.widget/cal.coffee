@@ -24,7 +24,7 @@ style: """
   bottom: 45px
   font-family: -apple-system
   font-size: 14px
-  font-weight: 400
+  font-weight: 100
   text-align: center
   color: #fff
   width: 100%
@@ -35,7 +35,7 @@ style: """
   .title
     color: rgba(#fff, .3)
     font-size: 14px
-    font-weight: 500
+    font-weight: 300
     padding-bottom: 5px
     text-transform uppercase
 
